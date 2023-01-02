@@ -12,11 +12,11 @@ struct student
     int rank;
     int avg;
 }ss[5]={
-"105001", "王小明", 92, 73, 80, 0, 1, 0,
-"105002", "陳小華", 93, 90, 82, 0, 1, 0,
-"105003", "趙錢孫", 82, 65, 72, 0, 1, 0,
-"105004", "阿土仔", 86, 90, 82, 0, 1, 0,
-"105005", "吳小美", 95, 90, 93, 0, 1, 0};
+"105001", "Ann", 92, 73, 80, 0, 1, 0,
+"105002", "Chen", 93, 90, 82, 0, 1, 0,
+"105003", "Sun", 82, 65, 72, 0, 1, 0,
+"105004", "Tina", 86, 90, 82, 0, 1, 0,
+"105005", "Wu", 95, 90, 93, 0, 1, 0};
 
 int main()
 {
@@ -44,10 +44,10 @@ int main()
 
 
     for(int l=0 ; l<5 ; l++){
-      printf("學號:%6s 姓名:%6s 國文=%d 英文=%d 數學=%d 總分=%d 排名 %d\n", ss[l].ID, ss[l].name, ss[l].chn, ss[l].eng, ss[l].math, ss[l].total, ss[l].rank);
+      printf("ID:%6s Name:%6s Mandarin=%d English=%d Math=%d Total score = %d Rank %d\n", ss[l].ID, ss[l].name, ss[l].chn, ss[l].eng, ss[l].math, ss[l].total, ss[l].rank);
     }
 
-    printf("國文平均=%d 英文平均=%d 數學平均=%d\n", chnavg, engavg, mathavg);
+    printf("Mandarin Avg.=%d English Avg.=%d Math Avg.=%d\n", chnavg, engavg, mathavg);
 
     return 0;
 }
